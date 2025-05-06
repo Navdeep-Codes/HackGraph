@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Card</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <form action="/cards/create" method="POST" enctype="multipart/form-data">
+    <input name="name" placeholder="Card Name" required><br>
+    <input type="file" name="banner" accept="image/*" required><br>
+    <button type="submit">Create Card</button>
+  </form>
+</body>
+</html>
