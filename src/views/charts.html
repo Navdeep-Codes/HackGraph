@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charts - Notion Chart Visualizer</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="charts-page">
+  <header>
+    <h1>Your Notion Charts</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/charts" class="active">Charts</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="saved-charts">
+      <h2>Saved Charts</h2>
+      <div id="charts-gallery" class="charts-gallery">
+        <!-- Charts will be inserted here -->
+        <p id="no-charts-message">No saved charts yet. Create one from the home page.</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Notion Chart Visualizer © 2025</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/saved-charts.js"></script>
+</body>
+</html>

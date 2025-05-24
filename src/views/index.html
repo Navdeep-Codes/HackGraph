@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notion Chart Visualizer</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Notion Chart Visualizer</h1>
+  </header>
+  
+  <main>
+    <section class="setup-section">
+      <h2>Connect to Notion</h2>
+      
+      <div class="database-selector">
+        <label for="database-select">Select a Notion Database:</label>
+        <select id="database-select">
+          <option value="">-- Select a database --</option>
+        </select>
+        <button id="load-databases">Refresh Databases</button>
+      </div>
+      
+      <div class="chart-config" id="chart-config">
+        <h3>Chart Configuration</h3>
+        <div>
+          <label for="chart-type">Chart Type:</label>
+          <select id="chart-type">
+            <option value="bar">Bar Chart</option>
+            <option value="line">Line Chart</option>
+            <option value="pie">Pie Chart</option>
+          </select>
+        </div>
+        
+        <div>
+          <label for="x-axis">X-Axis Property:</label>
+          <select id="x-axis" disabled></select>
+        </div>
+        
+        <div>
+          <label for="y-axis">Y-Axis Property:</label>
+          <select id="y-axis" disabled></select>
+        </div>
+        
+        <div>
+          <label for="chart-title">Chart Title:</label>
+          <input type="text" id="chart-title" placeholder="Enter chart title">
+        </div>
+        
+        <button id="generate-chart" disabled>Generate Chart</button>
+      </div>
+    </section>
+    
+    <section class="chart-section" id="chart-container" style="display: none;">
+      <h2>Your Chart</h2>
+      <div class="chart-wrapper">
+        <canvas id="chart-canvas"></canvas>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Notion Chart Visualizer © 2025</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/charts.js"></script>
+</body>
+</html>
