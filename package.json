@@ -1,23 +1,25 @@
 {
   "name": "hackgraph",
   "version": "1.0.0",
-  "description": "A graph viewer for hackclub evets and even outside(v2)",
-  "main": "server.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "airtable": "^0.12.2",
-    "bcryptjs": "^3.0.2",
+    "@notionhq/client": "^3.0.1",
+    "axios": "^1.9.0",
+    "canvas": "^3.1.0",
+    "chart.js": "^4.4.9",
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
-    "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.14.1",
-    "multer": "^1.4.5-lts.2"
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
